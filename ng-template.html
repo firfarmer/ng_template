@@ -23,6 +23,22 @@
 				</li>
 			</ul>
 			<!-- <table tr-ng-grid="" items="data"></table> -->
+			<table st-table="data" class="table table-striped">
+				<thead>
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>Count</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr ng-repeat="row in data">
+					<td>{{row.Id}}</td>
+					<td>{{row.Name}}</td>
+					<td>{{row.Count}}</td>
+				</tr>
+				</tbody>
+			</table>			
 		</div>
 	</body>
 </html>
