@@ -6,7 +6,43 @@
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-		<link rel="stylesheet" type="text/css" href="trNgGrid.min.css"
+		<link rel="stylesheet" type="text/css" href="trNgGrid.min.css">
+		<style>
+			.wrapper {
+				width:1080px;
+				margin-right: auto;
+				margin-left: 10px;
+				text-align: left;
+			}
+			.panel1 {
+				float: left;
+				width: 520px;
+				padding-left: 10px;
+				margin-left:30px;
+				background-color:#FFFFCC;	//yellow
+			}
+			.panel2 {
+				float:left;
+				width:520px;
+				padding-left: 10px;	
+				//margin-left: -530px;
+				background-color:#AAD5F7;  //blue
+			}
+			.panel3 {
+				float:left;
+				width:228px;
+				padding-left: 10px;
+				margin-left: -768px;
+				background-color:#CCFFCC; //green
+			}
+			.st-sort-ascent:before{
+				content: '\25B2';
+			}
+
+			.st-sort-descent:before{
+				content: '\25BC';
+			}
+  		</style>	
 	</head>
 	<body >
   		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -16,29 +52,65 @@
 		<script type="text/javascript" src="smart-table.min.js"></script> 
 		<script type="text/javascript" src="app.js"></script>
 		<div ng-controller="ProfileController as p">
-			<h1>{{title}}</h1>
-			<ul>
-				<li ng-repeat="item in data">
-				{{item.Name}}
-				</li>
-			</ul>
-			<!-- <table tr-ng-grid="" items="data"></table> -->
-			<table st-table="data" class="table table-striped">
-				<thead>
-				<tr>
-					<th>Id</th>
-					<th>Name</th>
-					<th>Count</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr ng-repeat="row in data">
-					<td>{{row.Id}}</td>
-					<td>{{row.Name}}</td>
-					<td>{{row.Count}}</td>
-				</tr>
-				</tbody>
-			</table>			
+			<div class="wrapper">
+				<div  class="panel1">
+				<h1>{{title}}</h1>
+				<!-- <table tr-ng-grid="" items="data"></table> -->
+				<table st-table="data" class="table table-striped">
+					<thead>
+					<tr>
+						<th st-ratio="10">Id</th>
+						<th st-sort="Name" st-sort-default="true" st-ratio="80">Name</th>
+						<th st-sort="Count" st-ratio="10">Count</th>
+					</tr>
+					<tr>
+						<th>
+						</th>
+						<th>
+							<input st-search="Name" placeholder="profile name" class="input-sm form-control" type="search"/>
+						</th>
+						<th>
+						</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr ng-repeat="row in data">
+						<td>{{row.Id}}</td>
+						<td>{{row.Name}}</td>
+						<td>{{row.Count}}</td>
+					</tr>
+					</tbody>
+				</table>
+				</div>	
+				<div class="panel2">
+				<h1>Roles</h1>
+				<table st-table="roles" class="table table-striped">
+					<thead>
+					<tr>
+						<th st-ratio="10">Id</th>
+						<th st-sort="Name" st-sort-default="true" st-ratio="80">Name</th>
+						<th st-sort="Count" st-ratio="10">Count</th>
+					</tr>
+					<tr>
+						<th>
+						</th>
+						<th>
+							<input st-search="Name" placeholder="profile name" class="input-sm form-control" type="search"/>
+						</th>
+						<th>
+						</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr ng-repeat="row in roles">
+						<td>{{row.Id}}</td>
+						<td>{{row.Name}}</td>
+						<td>{{row.Count}}</td>
+					</tr>
+					</tbody>
+				</table>
+				</div>	
+			</div>		
 		</div>
 	</body>
 </html>

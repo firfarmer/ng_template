@@ -1,0 +1,287 @@
+
+--------------------------------------------
+---------- NEW OPERATION REQUESTED ---------
+--------------------------------------------
+
+run_apex_script
+Namespace(client='SUBLIME_TEXT_3', format='json', offline=False, operation='run_apex_script', quiet=False, respond_with_html=False, ui_switch=False, uid=None, verbose=False)
+{u'project_name': u'concur.sfa', 'verbose': False, 'args': Namespace(client='SUBLIME_TEXT_3', format='json', offline=False, operation='run_apex_script', quiet=False, respond_with_html=False, ui_switch=False, uid=None, verbose=False), u'script_name': u'CreateProjects.cls', 'client': 'SUBLIME_TEXT_3', u'return_log': False, 'ui': False, u'workspace': u'/Users/milesu/Documents/workspaces', 'operation': 'run_apex_script'}
+
+--------------------------------------------
+creds!
+{'username': u'milesu@concur.com.sfa', 'endpoint': u'https://test.salesforce.com/services/Soap/u/31.0', 'user_id': u'00560000003eFmOAAU', 'metadata_server_url': u'https://cs18.salesforce.com/services/Soap/m/31.0/00D1100000C1D5p', 'org_url': u'', 'server_url': u'https://cs18.salesforce.com/services/Soap/u/31.0/00D1100000C1D5p', 'org_type': u'sandbox', 'sid': u'00D1100000C1D5p!AQYAQH2Yx3z.d.fuYFHSP53NicVNhfKdTfp0vahbSmzJdDNyIuS7A9dp2psvg3iCjUG4JrJ99O4P4PonEcBD3CxuViIvPnPT', 'password': u'john;151154gkK34xb0jpvR1zT2zAO1J7'}
+sandbox
+endpont is ::: 
+https://test.salesforce.com/services/Soap/u/31.0
+GETTING USER INFO
+sending to (https://cs18.salesforce.com/services/Soap/u/31.0/00D1100000C1D5p)
+message:
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:ns0="urn:partner.soap.sforce.com" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="urn:partner.soap.sforce.com" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header>
+      <tns:SessionHeader>
+         <tns:sessionId>00D1100000C1D5p!AQYAQH2Yx3z.d.fuYFHSP53NicVNhfKdTfp0vahbSmzJdDNyIuS7A9dp2psvg3iCjUG4JrJ99O4P4PonEcBD3CxuViIvPnPT</tns:sessionId>
+      </tns:SessionHeader>
+   </SOAP-ENV:Header>
+   <ns1:Body>
+      <ns0:getUserInfo/>
+   </ns1:Body>
+</SOAP-ENV:Envelope>
+headers = {'SOAPAction': u'""', 'Content-Type': 'text/xml; charset=utf-8', u'User-Agent': u'MavensMate'}
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:ns0="urn:partner.soap.sforce.com" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="urn:partner.soap.sforce.com" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header>
+      <tns:SessionHeader>
+         <tns:sessionId>00D1100000C1D5p!AQYAQH2Yx3z.d.fuYFHSP53NicVNhfKdTfp0vahbSmzJdDNyIuS7A9dp2psvg3iCjUG4JrJ99O4P4PonEcBD3CxuViIvPnPT</tns:sessionId>
+      </tns:SessionHeader>
+   </SOAP-ENV:Header>
+   <ns1:Body>
+      <ns0:getUserInfo/>
+   </ns1:Body>
+</SOAP-ENV:Envelope>
+http failed:
+<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sf="urn:fault.partner.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><soapenv:Fault><faultcode>sf:INVALID_SESSION_ID</faultcode><faultstring>INVALID_SESSION_ID: Invalid Session ID found in SessionHeader: Illegal Session. Session not found, missing session key: 00D1100000C1D5p!AQYAQH2Yx3z.d.fuYFHSP53NicVNhfKdTfp0vahbSmzJdDNyIuS7A9dp2psvg3iCjUG4JrJ99O4P4PonEcBD3CxuViIvPnPT
+This is expected, it can happen if the session has expired and swept away, or if the user logs out, or if its just someone trying to hack in. </faultstring><detail><sf:UnexpectedErrorFault xsi:type="sf:UnexpectedErrorFault"><sf:exceptionCode>INVALID_SESSION_ID</sf:exceptionCode><sf:exceptionMessage>Invalid Session ID found in SessionHeader: Illegal Session. Session not found, missing session key: 00D1100000C1D5p!AQYAQH2Yx3z.d.fuYFHSP53NicVNhfKdTfp0vahbSmzJdDNyIuS7A9dp2psvg3iCjUG4JrJ99O4P4PonEcBD3CxuViIvPnPT
+This is expected, it can happen if the session has expired and swept away, or if the user logs out, or if its just someone trying to hack in. </sf:exceptionMessage></sf:UnexpectedErrorFault></detail></soapenv:Fault></soapenv:Body></soapenv:Envelope>
+{'username': u'milesu@concur.com.sfa', 'endpoint': u'https://test.salesforce.com/services/Soap/u/31.0', 'user_id': u'00560000003eFmOAAU', 'metadata_server_url': u'https://cs18.salesforce.com/services/Soap/m/31.0/00D1100000C1D5p', 'org_url': u'', 'server_url': u'https://cs18.salesforce.com/services/Soap/u/31.0/00D1100000C1D5p', 'org_type': u'sandbox', 'sid': u'00D1100000C1D5p!AQYAQH2Yx3z.d.fuYFHSP53NicVNhfKdTfp0vahbSmzJdDNyIuS7A9dp2psvg3iCjUG4JrJ99O4P4PonEcBD3CxuViIvPnPT', 'password': u'john;151154gkK34xb0jpvR1zT2zAO1J7'}
+sending to (https://test.salesforce.com/services/Soap/u/31.0)
+message:
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:ns0="urn:partner.soap.sforce.com" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <ns1:Body>
+      <ns0:login>
+         <ns0:username>milesu@concur.com.sfa</ns0:username>
+         <ns0:password>john;151154gkK34xb0jpvR1zT2zAO1J7</ns0:password>
+      </ns0:login>
+   </ns1:Body>
+</SOAP-ENV:Envelope>
+headers = {'SOAPAction': u'""', 'Content-Type': 'text/xml; charset=utf-8', u'User-Agent': u'MavensMate'}
+http succeeded:
+<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:partner.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><loginResponse><result><metadataServerUrl>https://cs18.salesforce.com/services/Soap/m/31.0/00D1100000C1D5p</metadataServerUrl><passwordExpired>false</passwordExpired><sandbox>true</sandbox><serverUrl>https://cs18.salesforce.com/services/Soap/u/31.0/00D1100000C1D5p</serverUrl><sessionId>00D1100000C1D5p!AQYAQCT5GCwz6Y62s8zxgskUXFnzqxAealbB1O0q1bwe0AfoJAn1OY9MR8bFm_lCyJkoVL8.MxfgHEHTrf5CSzuc915me91A</sessionId><userId>00560000003eFmOAAU</userId><userInfo><accessibilityMode>false</accessibilityMode><currencySymbol xsi:nil="true"/><orgAttachmentFileSizeLimit>26214400</orgAttachmentFileSizeLimit><orgDefaultCurrencyIsoCode xsi:nil="true"/><orgDisallowHtmlAttachments>false</orgDisallowHtmlAttachments><orgHasPersonAccounts>false</orgHasPersonAccounts><organizationId>00D1100000C1D5pEAF</organizationId><organizationMultiCurrency>true</organizationMultiCurrency><organizationName>Concur</organizationName><profileId>00e60000000nnpPAAQ</profileId><roleId>00E60000000nq4FEAQ</roleId><sessionSecondsValid>3600</sessionSecondsValid><userDefaultCurrencyIsoCode>USD</userDefaultCurrencyIsoCode><userEmail>miles.ulrich@concur.com</userEmail><userFullName>Miles Ulrich</userFullName><userId>00560000003eFmOAAU</userId><userLanguage>en_US</userLanguage><userLocale>en_US</userLocale><userName>milesu@concur.com.sfa</userName><userTimeZone>America/Tijuana</userTimeZone><userType>Standard</userType><userUiSkin>Theme3</userUiSkin></userInfo></result></loginResponse></soapenv:Body></soapenv:Envelope>
+LOGIN RESULT
+(LoginResult){
+   metadataServerUrl = "https://cs18.salesforce.com/services/Soap/m/31.0/00D1100000C1D5p"
+   passwordExpired = False
+   sandbox = True
+   serverUrl = "https://cs18.salesforce.com/services/Soap/u/31.0/00D1100000C1D5p"
+   sessionId = "00D1100000C1D5p!AQYAQCT5GCwz6Y62s8zxgskUXFnzqxAealbB1O0q1bwe0AfoJAn1OY9MR8bFm_lCyJkoVL8.MxfgHEHTrf5CSzuc915me91A"
+   userId = "00560000003eFmOAAU"
+   userInfo = 
+      (GetUserInfoResult){
+         accessibilityMode = False
+         currencySymbol = None
+         orgAttachmentFileSizeLimit = 26214400
+         orgDefaultCurrencyIsoCode = None
+         orgDisallowHtmlAttachments = False
+         orgHasPersonAccounts = False
+         organizationId = "00D1100000C1D5pEAF"
+         organizationMultiCurrency = True
+         organizationName = "Concur"
+         profileId = "00e60000000nnpPAAQ"
+         roleId = "00E60000000nq4FEAQ"
+         sessionSecondsValid = 3600
+         userDefaultCurrencyIsoCode = "USD"
+         userEmail = "miles.ulrich@concur.com"
+         userFullName = "Miles Ulrich"
+         userId = "00560000003eFmOAAU"
+         userLanguage = "en_US"
+         userLocale = "en_US"
+         userName = "milesu@concur.com.sfa"
+         userTimeZone = "America/Tijuana"
+         userType = "Standard"
+         userUiSkin = "Theme3"
+      }
+ }
+storing updated session information locally
+sending to (https://cs18.salesforce.com/services/Soap/s/31.0/00D1100000C1D5p)
+message:
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://soap.sforce.com/2006/08/apex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://soap.sforce.com/2006/08/apex" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header>
+      <tns:SessionHeader>
+         <tns:sessionId>00D1100000C1D5p!AQYAQCT5GCwz6Y62s8zxgskUXFnzqxAealbB1O0q1bwe0AfoJAn1OY9MR8bFm_lCyJkoVL8.MxfgHEHTrf5CSzuc915me91A</tns:sessionId>
+      </tns:SessionHeader>
+      <tns:DebuggingHeader>
+         <tns:categories>
+            <tns:category>Apex_code</tns:category>
+            <tns:level>DEBUG</tns:level>
+         </tns:categories>
+         <tns:categories>
+            <tns:category>Workflow</tns:category>
+            <tns:level>INFO</tns:level>
+         </tns:categories>
+         <tns:categories>
+            <tns:category>Apex_profiling</tns:category>
+            <tns:level>DEBUG</tns:level>
+         </tns:categories>
+         <tns:categories>
+            <tns:category>Callout</tns:category>
+            <tns:level>INFO</tns:level>
+         </tns:categories>
+         <tns:categories>
+            <tns:category>Db</tns:category>
+            <tns:level>INFO</tns:level>
+         </tns:categories>
+         <tns:categories>
+            <tns:category>Validation</tns:category>
+            <tns:level>INFO</tns:level>
+         </tns:categories>
+      </tns:DebuggingHeader>
+   </SOAP-ENV:Header>
+   <ns0:Body>
+      <ns1:executeAnonymous>
+         <ns1:String>testAccount = new Account(Name = &apos;MILES TEST ACCOUNT&apos;, Billing_Country__c = &apos;USA&apos;, Billing_State_Province__c = &apos;CA&apos;);
+insert testAccount;    
+system.debug(LoggingLevel.WARN, &apos;Test Account: &apos;+testAccount.Id);
+Opportunity newOpp = new Opportunity(Name = &apos;TEST OPPTY 01&apos;, Type = &apos;New Business&apos;, Probability = 90, StageName = &apos;Pre-Qualification&apos;, 
+    CloseDate = SYSTEM.Today(), AccountId = testAccount.Id, CurrencyIsoCode = baseEntry.CurrencyISOCode, 
+    Customer_Currency__c = baseEntry.CurrencyIsoCode, 
+    Contract_Approved__c = false, NCU_Services_Ordered__c = &apos;Travel and Expense - NCU APEX;&apos;);
+insert newOpp;
+system.debug(LoggingLevel.WARN, &apos;Test Opportunity: &apos;+newOpp.Id);
+
+</ns1:String>
+      </ns1:executeAnonymous>
+   </ns0:Body>
+</SOAP-ENV:Envelope>
+headers = {'SOAPAction': u'""', 'Content-Type': 'text/xml; charset=utf-8', u'User-Agent': u'MavensMate'}
+http succeeded:
+<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://soap.sforce.com/2006/08/apex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Header><DebuggingInfo><debugLog></debugLog></DebuggingInfo></soapenv:Header><soapenv:Body><executeAnonymousResponse><result><column>1</column><compileProblem>Variable does not exist: testAccount</compileProblem><compiled>false</compiled><exceptionMessage xsi:nil="true"/><exceptionStackTrace xsi:nil="true"/><line>1</line><success>false</success></result></executeAnonymousResponse></soapenv:Body></soapenv:Envelope>
+---------------------
+result from command execution
+{"success": false, "column": 1, "compiled": false, "compileProblem": "Variable does not exist: testAccount", "exceptionMessage": null, "exceptionStackTrace": null, "line": 1}
+<type 'str'>
+---------------------
+
+
+---------------------
+RESPONDING TO REQUEST
+---------------------
+
+
+{"success": false, "column": 1, "compiled": false, "compileProblem": "Variable does not exist: testAccount", "exceptionMessage": null, "exceptionStackTrace": null, "line": 1}
+
+--------------------------------------------
+---------- NEW OPERATION REQUESTED ---------
+--------------------------------------------
+
+run_apex_script
+Namespace(client='SUBLIME_TEXT_3', format='json', offline=False, operation='run_apex_script', quiet=False, respond_with_html=False, ui_switch=False, uid=None, verbose=False)
+{u'project_name': u'concur.sfa', 'verbose': False, 'args': Namespace(client='SUBLIME_TEXT_3', format='json', offline=False, operation='run_apex_script', quiet=False, respond_with_html=False, ui_switch=False, uid=None, verbose=False), u'script_name': u'CreateProjects.cls', 'client': 'SUBLIME_TEXT_3', u'return_log': False, 'ui': False, u'workspace': u'/Users/milesu/Documents/workspaces', 'operation': 'run_apex_script'}
+
+--------------------------------------------
+creds!
+{'username': u'milesu@concur.com.sfa', 'endpoint': u'https://test.salesforce.com/services/Soap/u/31.0', 'user_id': u'00560000003eFmOAAU', 'metadata_server_url': u'https://cs18.salesforce.com/services/Soap/m/31.0/00D1100000C1D5p', 'org_url': u'', 'server_url': u'https://cs18.salesforce.com/services/Soap/u/31.0/00D1100000C1D5p', 'org_type': u'sandbox', 'sid': u'00D1100000C1D5p!AQYAQCT5GCwz6Y62s8zxgskUXFnzqxAealbB1O0q1bwe0AfoJAn1OY9MR8bFm_lCyJkoVL8.MxfgHEHTrf5CSzuc915me91A', 'password': u'john;151154gkK34xb0jpvR1zT2zAO1J7'}
+sandbox
+endpont is ::: 
+https://test.salesforce.com/services/Soap/u/31.0
+GETTING USER INFO
+sending to (https://cs18.salesforce.com/services/Soap/u/31.0/00D1100000C1D5p)
+message:
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:ns0="urn:partner.soap.sforce.com" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="urn:partner.soap.sforce.com" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header>
+      <tns:SessionHeader>
+         <tns:sessionId>00D1100000C1D5p!AQYAQCT5GCwz6Y62s8zxgskUXFnzqxAealbB1O0q1bwe0AfoJAn1OY9MR8bFm_lCyJkoVL8.MxfgHEHTrf5CSzuc915me91A</tns:sessionId>
+      </tns:SessionHeader>
+   </SOAP-ENV:Header>
+   <ns1:Body>
+      <ns0:getUserInfo/>
+   </ns1:Body>
+</SOAP-ENV:Envelope>
+headers = {'SOAPAction': u'""', 'Content-Type': 'text/xml; charset=utf-8', u'User-Agent': u'MavensMate'}
+http succeeded:
+<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:partner.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Header><LimitInfoHeader><limitInfo><current>19507</current><limit>71001000</limit><type>API REQUESTS</type></limitInfo></LimitInfoHeader></soapenv:Header><soapenv:Body><getUserInfoResponse><result><accessibilityMode>false</accessibilityMode><currencySymbol xsi:nil="true"/><orgAttachmentFileSizeLimit>26214400</orgAttachmentFileSizeLimit><orgDefaultCurrencyIsoCode xsi:nil="true"/><orgDisallowHtmlAttachments>false</orgDisallowHtmlAttachments><orgHasPersonAccounts>false</orgHasPersonAccounts><organizationId>00D1100000C1D5pEAF</organizationId><organizationMultiCurrency>true</organizationMultiCurrency><organizationName>Concur</organizationName><profileId>00e60000000nnpPAAQ</profileId><roleId>00E60000000nq4FEAQ</roleId><sessionSecondsValid>3600</sessionSecondsValid><userDefaultCurrencyIsoCode>USD</userDefaultCurrencyIsoCode><userEmail>miles.ulrich@concur.com</userEmail><userFullName>Miles Ulrich</userFullName><userId>00560000003eFmOAAU</userId><userLanguage>en_US</userLanguage><userLocale>en_US</userLocale><userName>milesu@concur.com.sfa</userName><userTimeZone>America/Tijuana</userTimeZone><userType>Standard</userType><userUiSkin>Theme3</userUiSkin></result></getUserInfoResponse></soapenv:Body></soapenv:Envelope>
+(GetUserInfoResult){
+   accessibilityMode = False
+   currencySymbol = None
+   orgAttachmentFileSizeLimit = 26214400
+   orgDefaultCurrencyIsoCode = None
+   orgDisallowHtmlAttachments = False
+   orgHasPersonAccounts = False
+   organizationId = "00D1100000C1D5pEAF"
+   organizationMultiCurrency = True
+   organizationName = "Concur"
+   profileId = "00e60000000nnpPAAQ"
+   roleId = "00E60000000nq4FEAQ"
+   sessionSecondsValid = 3600
+   userDefaultCurrencyIsoCode = "USD"
+   userEmail = "miles.ulrich@concur.com"
+   userFullName = "Miles Ulrich"
+   userId = "00560000003eFmOAAU"
+   userLanguage = "en_US"
+   userLocale = "en_US"
+   userName = "milesu@concur.com.sfa"
+   userTimeZone = "America/Tijuana"
+   userType = "Standard"
+   userUiSkin = "Theme3"
+ }
+sending to (https://cs18.salesforce.com/services/Soap/s/31.0/00D1100000C1D5p)
+message:
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://soap.sforce.com/2006/08/apex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://soap.sforce.com/2006/08/apex" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header>
+      <tns:SessionHeader>
+         <tns:sessionId>00D1100000C1D5p!AQYAQCT5GCwz6Y62s8zxgskUXFnzqxAealbB1O0q1bwe0AfoJAn1OY9MR8bFm_lCyJkoVL8.MxfgHEHTrf5CSzuc915me91A</tns:sessionId>
+      </tns:SessionHeader>
+      <tns:DebuggingHeader>
+         <tns:categories>
+            <tns:category>Apex_code</tns:category>
+            <tns:level>DEBUG</tns:level>
+         </tns:categories>
+         <tns:categories>
+            <tns:category>Workflow</tns:category>
+            <tns:level>INFO</tns:level>
+         </tns:categories>
+         <tns:categories>
+            <tns:category>Apex_profiling</tns:category>
+            <tns:level>DEBUG</tns:level>
+         </tns:categories>
+         <tns:categories>
+            <tns:category>Callout</tns:category>
+            <tns:level>INFO</tns:level>
+         </tns:categories>
+         <tns:categories>
+            <tns:category>Db</tns:category>
+            <tns:level>INFO</tns:level>
+         </tns:categories>
+         <tns:categories>
+            <tns:category>Validation</tns:category>
+            <tns:level>INFO</tns:level>
+         </tns:categories>
+      </tns:DebuggingHeader>
+   </SOAP-ENV:Header>
+   <ns0:Body>
+      <ns1:executeAnonymous>
+         <ns1:String>String strInstance=&apos;01&apos;;
+Account testAccount = new Account(Name = &apos;MILES TEST ACCOUNT &apos;+strInstance, Billing_Country__c = &apos;USA&apos;, Billing_State_Province__c = &apos;CA&apos;);
+insert testAccount;    
+system.debug(LoggingLevel.WARN, &apos;Test Account: &apos;+testAccount.Id);
+Opportunity newOpp = new Opportunity(Name = &apos;TEST OPPTY &apos;+strInstance, Type = &apos;New Business&apos;, Probability = 90, StageName = &apos;Pre-Qualification&apos;, 
+    CloseDate = SYSTEM.Today(), AccountId = testAccount.Id, CurrencyIsoCode = baseEntry.CurrencyISOCode, 
+    Customer_Currency__c = baseEntry.CurrencyIsoCode, 
+    Contract_Approved__c = false, NCU_Services_Ordered__c = &apos;Travel and Expense - NCU APEX;&apos;);
+insert newOpp;
+system.debug(LoggingLevel.WARN, &apos;Test Opportunity: &apos;+newOpp.Id);
+
+</ns1:String>
+      </ns1:executeAnonymous>
+   </ns0:Body>
+</SOAP-ENV:Envelope>
+headers = {'SOAPAction': u'""', 'Content-Type': 'text/xml; charset=utf-8', u'User-Agent': u'MavensMate'}
+http succeeded:
+<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://soap.sforce.com/2006/08/apex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Header><DebuggingInfo><debugLog></debugLog></DebuggingInfo></soapenv:Header><soapenv:Body><executeAnonymousResponse><result><column>79</column><compileProblem>Variable does not exist: baseEntry.CurrencyISOCode</compileProblem><compiled>false</compiled><exceptionMessage xsi:nil="true"/><exceptionStackTrace xsi:nil="true"/><line>6</line><success>false</success></result></executeAnonymousResponse></soapenv:Body></soapenv:Envelope>
+---------------------
+result from command execution
+{"success": false, "column": 79, "compiled": false, "compileProblem": "Variable does not exist: baseEntry.CurrencyISOCode", "exceptionMessage": null, "exceptionStackTrace": null, "line": 6}
+<type 'str'>
+---------------------
+
+
+---------------------
+RESPONDING TO REQUEST
+---------------------
+
+
+{"success": false, "column": 79, "compiled": false, "compileProblem": "Variable does not exist: baseEntry.CurrencyISOCode", "exceptionMessage": null, "exceptionStackTrace": null, "line": 6}
